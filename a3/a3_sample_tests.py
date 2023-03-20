@@ -1,23 +1,3 @@
-"""CSC110 Fall 2021 Assignment 3, Example Tests
-
-Instructions (READ THIS FIRST!)
-===============================
-This Python module contains example tests you can run for Parts 1 and 2 of this assignment. Please
-note that passing all these tests does NOT mean you have a 100% correct solution.
-
-Some of the tests are empty, consider completing them. Also consider adding more of your own tests.
-
-Copyright and Usage Information
-===============================
-
-This file is provided solely for the personal and private use of students
-taking CSC110 at the University of Toronto St. George campus. All forms of
-distribution of this code, whether as given or with any changes, are
-expressly prohibited. For more information on copyright for CSC110 materials,
-please consult our Course Syllabus.
-
-This file is Copyright (c) 2021 Mario Badr and Tom Fairgrieve.
-"""
 import a3_part1
 import a3_part2
 
@@ -31,8 +11,6 @@ class TestCreateModelUniform:
         expected = {'Hello,': 1, 'World!': 1}
 
         assert a3_part1.create_model_uniform(test_text) == expected
-
-    # TODO: Consider adding more tests
 
 
 class TestUpdateFollowList:
@@ -60,8 +38,6 @@ class TestUpdateFollowList:
 
         assert test_model == {'I': ['like'], 'like': ['chocolate']}
 
-    # TODO: Consider adding more tests
-
 
 class TestCreateModelOwc:
     """Some example tests for A3 Part 2 - create_model_owc."""
@@ -76,8 +52,6 @@ class TestCreateModelOwc:
         actual_word_count, actual_model = a3_part2.create_model_owc(test_text)
         assert actual_word_count == expected_word_count
         assert actual_model == expected_model
-
-    # TODO: Consider adding more tests
 
 
 class TestChooseFromKeys:
@@ -96,8 +70,6 @@ class TestChooseFromKeys:
 
         assert a3_part2.choose_from_keys(test_transitions) in possibilities
 
-    # TODO: Consider adding more tests
-
 
 class TestChooseFromFollowList:
     """Some example tests for A3 Part 2 - choose_from_follow_list."""
@@ -114,14 +86,6 @@ class TestChooseFromFollowList:
         a3_part2.choose_from_follow_list('The', test_transitions)
 
         assert test_transitions == {'cat': ['in'], 'in': ['the'], 'the': ['hat.']}
-
-    # TODO: Consider adding more tests
-
-
-class TestGenerateTextOwc:
-    """Some example tests for A3 Part 2 - generate_text_owc."""
-
-    # TODO: Consider adding more tests
 
 
 if __name__ == '__main__':
