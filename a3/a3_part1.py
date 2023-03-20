@@ -1,23 +1,3 @@
-"""CSC110 Fall 2021 Assignment 3, Part 1: Text Generation, Uniformly Random Model (SOLUTIONS)
-
-Instructions (READ THIS FIRST!)
-===============================
-Implement each of the functions in this file. As usual, do not change any function headers
-or preconditions. You do NOT need to add doctests.
-
-You may create some additional helper functions to help break up your code into smaller parts.
-
-Copyright and Usage Information
-===============================
-
-This file is provided solely for the personal and private use of students
-taking CSC110 at the University of Toronto St. George campus. All forms of
-distribution of this code, whether as given or with any changes, are
-expressly prohibited. For more information on copyright for CSC110 materials,
-please consult our Course Syllabus.
-
-This file is Copyright (c) 2021 Mario Badr and Tom Fairgrieve.
-"""
 import random
 
 
@@ -68,14 +48,8 @@ def create_model_uniform(text: str) -> dict[str, int]:
 
 
 def run_example(filename: str, num_words: int) -> str:
-    """Run an example to demonstrate random text generation with num_words words based on the data
-    in filename.
-
-    To call this function:
-        - Make sure you see that the 'data' folder is in the same directory as this file
-        - Use an argument for filename like: 'data/texts/sample_text_raw.txt'
-        - Try out the other plaintext files in  'data/texts', too
-    """
+    """Run an example to demonstrate random text generation with num_words words based on the data in filename."""
+    
     with open(filename) as f:
         file_text = f.read()
 
@@ -91,13 +65,3 @@ if __name__ == '__main__':
     import python_ta.contracts
     python_ta.contracts.DEBUG_CONTRACTS = False
     python_ta.contracts.check_all_contracts()
-
-    # When you are ready to check your work with python_ta, uncomment the following lines.
-    # (Delete the "#" and space before each line.)
-    # IMPORTANT: keep this code indented inside the "if __name__ == '__main__'" block
-    # python_ta.check_all(config={
-    #     'allowed-io': ['run_example'],
-    #     'extra-imports': ['python_ta.contracts', 'random'],
-    #     'max-line-length': 100,
-    #     'disable': ['R1705', 'C0200']
-    # })
