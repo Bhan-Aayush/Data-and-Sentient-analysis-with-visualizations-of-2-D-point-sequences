@@ -1,0 +1,1 @@
+# Data-and-Sentient-analysis-with-visualizations-of-2-D-point-sequences
