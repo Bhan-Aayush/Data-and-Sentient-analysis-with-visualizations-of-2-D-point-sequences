@@ -1,20 +1,3 @@
-"""CSC110 Fall 2021 Assignment 3: Part 4 (Student Test Suite)
-
-Instructions (READ THIS FIRST!)
-===============================
-Complete the unit tests in this file based on their docstring descriptions.
-
-Copyright and Usage Information
-===============================
-
-This file is provided solely for the personal and private use of students
-taking CSC110 at the University of Toronto St. George campus. All forms of
-distribution of this code, whether as given or with any changes, are
-expressly prohibited. For more information on copyright for CSC110 materials,
-please consult our Course Syllabus.
-
-This file is Copyright (c) 2021 Mario Badr and Tom Fairgrieve.
-"""
 import pytest
 
 from a3_part4 import load_data
